@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:fitsSystemWindows="true">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<EditText
+			android:id="@+id/数据库搜索栏"
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:hint="搜索"
+			android:layout_weight="1"/>
+
+		<TextView
+			android:id="@+id/数据库添加"
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:text="添加"
+			android:textSize="30sp"
+			android:layout_weight="5"
+			android:gravity="center"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_height="match_parent"
+			android:layout_width="wrap_content"
+			android:text="Id"
+			android:gravity="center"
+			android:layout_weight="2"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="名字"
+			android:layout_weight="2"
+			android:gravity="center"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="年龄"
+			android:layout_weight="1"
+			android:gravity="center"/>
+
+	</LinearLayout>
+
+	<ListView
+		android:id="@+id/数据库lv"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"/>
+
+</LinearLayout>
+

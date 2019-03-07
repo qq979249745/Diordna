@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:padding="10dp">
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:text="请输入要加密或解密的内容:"
+		android:background="#FFD500"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<EditText
+			android:id="@+id/jjmEt"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:ems="10"
+			android:layout_weight="1.0"
+			android:lines="1"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="56dp"
+			android:text="加密"
+			android:onClick="加密"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="56dp"
+			android:text="解密"
+			android:onClick="解密"/>
+
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/jjmTv"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:textIsSelectable="true"/>
+
+</LinearLayout>
+

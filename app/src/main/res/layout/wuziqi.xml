@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/bg"
+	android:fitsSystemWindows="true">
+
+	<com.qq979249745.wuziqi.Wuziqi
+		android:id="@+id/wuzhiqi"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#D1C3C3AF"
+		android:layout_margin="7dp"
+		android:layout_centerInParent="true"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="悔棋"
+		android:layout_alignParentBottom="true"
+		android:layout_marginLeft="20dp"
+		android:layout_marginBottom="20dp"
+		android:onClick="悔棋"
+		android:textSize="20sp"
+		android:textColor="#EFCB2E"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="再来一局"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="20dp"
+		android:layout_marginBottom="20dp"
+		android:onClick="再来一局"
+		android:textSize="20sp"
+		android:textColor="#EFCB2E"/>
+
+</RelativeLayout>
+

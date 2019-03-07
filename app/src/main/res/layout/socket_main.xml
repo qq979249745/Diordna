@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:fitsSystemWindows="true"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="打开服务器"
+			android:onClick="打开服务器"
+			android:layout_weight="1.0"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="连接服务器"
+			android:layout_weight="1.0"
+			android:onClick="连接服务器"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="关闭服务器"
+			android:layout_weight="1.0"
+			android:onClick="关闭服务器"/>
+
+	</LinearLayout>
+
+	<EditText
+		android:id="@+id/web_et"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:ems="10"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="发送给客户端"
+			android:onClick="发送给客户端"
+			android:layout_weight="1.0"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="发送给服务端"
+			android:onClick="发送给服务端"
+			android:layout_weight="1.0"/>
+
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/web_tv"
+		android:scrollbars="vertical"
+		android:textIsSelectable="true"
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:background="#C3C3C3"/>
+
+</LinearLayout>
+
